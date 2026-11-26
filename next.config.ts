@@ -1,9 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  poweredByHeader: false,
+  images: {
+    qualities: [75, 90],
+    remotePatterns: [
+      { protocol: "https", hostname: "img.itch.zone" },
+      { protocol: "https", hostname: "**.ytimg.com" },
+      { protocol: "https", hostname: "yt3.googleusercontent.com" },
+    ],
+  },
   turbopack: {
     rules: {
       "*.css": {

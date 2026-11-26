@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Obscura Studios — Branding Preview</title>
+    <style>
+      :root {
+        --ink: #080808;
+        --paper: #f5f5f5;
+        --muted: #a1a1a1;
+        --line: rgb(245 245 245 / 0.12);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--ink);
+        color: var(--paper);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 64px 28px 96px;
+      }
+
+      .kicker {
+        font-size: 10px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 18px 0 0;
+        font-size: clamp(2.2rem, 6vw, 4rem);
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 0.95;
+      }
+
+      h1 span { color: var(--muted); }
+
+      .lede {
+        max-width: 34rem;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      h2 {
+        margin: 72px 0 0;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1px;
+        margin-top: 24px;
+        background: var(--line);
+        border: 1px solid var(--line);
+      }
+
+      .tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        min-height: 280px;
+        padding: 36px 24px;
+        background: var(--ink);
+      }
+
+      .tile.light { background: #ffffff; color: #080808; }
+      .tile.dark { background: #080808; color: #f5f5f5; }
+      .tile.grey { background: #d9d9d9; color: #080808; }
+
+      .tile img { display: block; width: 148px; height: 148px; }
+
+      .tile .label {
+        font-size: 9px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        opacity: 0.55;
+        text-align: center;
+        line-height: 1.7;
+      }
+
+      .favicons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        margin-top: 24px;
+        background: var(--line);
+        border: 1px solid var(--line);
+      }
+
+      .favicon-cell {
+        display: flex;
+        flex: 1 1 160px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 28px 16px;
+        background: var(--ink);
+      }
+
+      .favicon-cell.light { background: #ffffff; color: #080808; }
+      .favicon-cell.dark { background: #080808; color: #f5f5f5; }
+
+      .favicon-cell img { width: 32px; height: 32px; image-rendering: auto; }
+
+      .favicon-cell span {
+        font-size: 9px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.55;
+      }
+
+      .scale-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 40px;
+        margin-top: 28px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        background: var(--ink);
+      }
+
+      .scale-row figure {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .scale-row figcaption {
+        font-size: 9px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .lockup {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 28px;
+        padding: 32px 40px;
+        border: 1px solid var(--line);
+      }
+
+      .lockup img { width: 30px; height: 30px; }
+
+      .lockup .wordmark {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+      }
+
+      .lockup .wordmark strong {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+      }
+
+      .lockup .wordmark em {
+        margin-top: 7px;
+        font-style: normal;
+        font-size: 9px;
+        letter-spacing: 0.46em;
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 72px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      @media (max-width: 560px) {
+        main { padding: 44px 18px 72px; }
+        .tile { min-height: 230px; padding: 28px 16px; }
+        .tile img { width: 112px; height: 112px; }
+        .scale-row { padding: 24px; gap: 28px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Obscura Studios</p>
+      <h1>The Aperture <span>— brand assets</span></h1>
+      <p class="lede">
+        A corona ring, an offset occluding disc, and a slit of negative space.
+        Monochrome only, no text, no gradients. Every asset on this page is
+        generated from the same two paths.
+      </p>
+
+      <h2>Master marks · 240px</h2>
+      <div class="grid">
+        <div class="tile light">
+          <img src="./obscura-mark-black.svg" alt="Black mark on transparent" />
+          <span class="label">Black<br />transparent</span>
+        </div>
+        <div class="tile dark">
+          <img src="./obscura-mark-white.svg" alt="White mark on transparent" />
+          <span class="label">White<br />transparent</span>
+        </div>
+        <div class="tile light">
+          <img src="./obscura-mark-black-on-white.svg" alt="Black mark on white" />
+          <span class="label">Black<br />on white</span>
+        </div>
+        <div class="tile dark">
+          <img src="./obscura-mark-white-on-black.svg" alt="White mark on black" />
+          <span class="label">White<br />on black</span>
+        </div>
+      </div>
+
+      <h2>Contrast check · 64px</h2>
+      <div class="grid">
+        <div class="tile light">
+          <img src="./obscura-mark-black.svg" alt="" style="width: 64px; height: 64px" />
+        </div>
+        <div class="tile grey">
+          <img src="./obscura-mark-black.svg" alt="" style="width: 64px; height: 64px" />
+        </div>
+        <div class="tile dark">
+          <img src="./obscura-mark-white.svg" alt="" style="width: 64px; height: 64px" />
+        </div>
+        <div class="tile dark" style="background: #141414">
+          <img src="./obscura-mark-white.svg" alt="" style="width: 64px; height: 64px" />
+        </div>
+      </div>
+
+      <h2>Favicon · 32px</h2>
+      <div class="favicons">
+        <div class="favicon-cell light">
+          <img src="./obscura-favicon.svg" alt="Black favicon" />
+          <span>Black / light tab</span>
+        </div>
+        <div class="favicon-cell dark">
+          <img src="./obscura-favicon-white.svg" alt="White favicon" />
+          <span>White / dark tab</span>
+        </div>
+        <div class="favicon-cell dark">
+          <img src="../icon.svg" alt="App icon" />
+          <span>App icon / dark</span>
+        </div>
+        <div class="favicon-cell light">
+          <img src="../icon.svg" alt="App icon" />
+          <span>App icon / light</span>
+        </div>
+      </div>
+
+      <h2>Scale</h2>
+      <div class="scale-row">
+        <figure>
+          <img src="./obscura-mark-white.svg" alt="" width="160" height="160" />
+          <figcaption>160</figcaption>
+        </figure>
+        <figure>
+          <img src="./obscura-mark-white.svg" alt="" width="80" height="80" />
+          <figcaption>80</figcaption>
+        </figure>
+        <figure>
+          <img src="./obscura-mark-white.svg" alt="" width="40" height="40" />
+          <figcaption>40</figcaption>
+        </figure>
+        <figure>
+          <img src="./obscura-mark-white.svg" alt="" width="24" height="24" />
+          <figcaption>24</figcaption>
+        </figure>
+        <figure>
+          <img src="./obscura-mark-white.svg" alt="" width="16" height="16" />
+          <figcaption>16</figcaption>
+        </figure>
+      </div>
+
+      <h2>Header lockup</h2>
+      <div class="lockup">
+        <img src="./obscura-mark-white.svg" alt="" />
+        <span class="wordmark">
+          <strong>OBSCURA</strong>
+          <em>STUDIOS</em>
+        </span>
+      </div>
+
+      <footer>Obscura Studios · The Aperture · 2026</footer>
+    </main>
+  </body>
+</html>
